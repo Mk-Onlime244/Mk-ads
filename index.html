@@ -248,7 +248,7 @@
 
                 <div class="input-group">
 
-                    <label for="paymentAddress">Your USDT Wallet Address (TRC20)</label>
+                    <label for="paymentAddress">Your Wallet pay ID (BINANCE)</label>
 
                     <input type="text" id="paymentAddress" placeholder="e.g., T... (BINANCE PAY ID)">
 
@@ -384,7 +384,7 @@
 
                 lastAdDate: null,
 
-                referralCount: 0 
+                referralCount: OFF after Update Open
 
             };
 
@@ -598,11 +598,11 @@
 
                 }
 
-                // Basic validation for USDT TRC20 address
+                // Basic validation for USDT BINANCE address
 
                 if (!walletAddress.startsWith('T') || walletAddress.length < 34) {
 
-                    showStatus('Please enter a valid USDT (TRC20) wallet address.', 'error');
+                    showStatus('Please enter a valid USDT (BINANCE) wallet address.', 'error');
 
                     return;
 
