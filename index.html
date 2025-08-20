@@ -218,7 +218,7 @@
 
             </div>
 
-            <div class="ad-buttons"><button class="btn" id="rewardedBtn">Watch Ad (+0.01 USDT)</button></div>
+            <div class="ad-buttons"><button class="btn" id="rewardedBtn">Watch Ad (+0.002 USDT)</button></div>
 
             <button class="btn" id="mainWithdrawBtn" disabled>Reach 10.00 USDT to Withdraw</button>
 
@@ -238,7 +238,7 @@
 
                 <div class="balance-amount" id="withdrawBalanceDisplay">USDT 0.00</div>
 
-                <p style="color: var(--tg-theme-hint-color); margin-top: 15px;">Minimum withdrawal is 10.00 USDT.</p>
+                <p style="color: var(--tg-theme-hint-color); margin-top: 15px;">Minimum withdrawal is 03.00 USDT.</p>
 
             </div>
 
@@ -250,7 +250,7 @@
 
                     <label for="paymentAddress">Your USDT Wallet Address (TRC20)</label>
 
-                    <input type="text" id="paymentAddress" placeholder="e.g., T... (TRC20 Address)">
+                    <input type="text" id="paymentAddress" placeholder="e.g., T... (BINANCE PAY ID)">
 
                 </div>
 
@@ -360,13 +360,13 @@
 
             
 
-            const WITHDRAW_THRESHOLD =3.0;      // 3.01 USDT
+            const WITHDRAW_THRESHOLD =3.0;      // 3.00 USDT
 
             const AD_REWARD_CENTS = 1;          // 0.00550 USDT = 1 cent
 
-            const REFERRAL_BONUS_USDT = 0.05;    // 0.05 USDT
+            const REFERRAL_BONUS_USDT = OFF;    // OFF USDT
 
-            const DAILY_AD_LIMIT = 1200;
+            const DAILY_AD_LIMIT = 1000;
 
 
 
@@ -488,7 +488,7 @@
 
                 rewardedBtn.disabled = adLimitReached;
 
-                rewardedBtn.textContent = adLimitReached ? 'Daily Limit Reached' : 'Watch Ad (+0.01 USDT)';
+                rewardedBtn.textContent = adLimitReached ? 'Daily Limit Reached' : 'Watch Ad (+0.002 USDT)';
 
             }
 
